@@ -1,0 +1,84 @@
+<div class="pb-10">
+  <div class="d-flex align-items-center rounded py-5 px-4 bg-light-info">
+    <!--begin::Icon-->
+    <div class="d-flex h-80px w-80px flex-shrink-0 flex-center position-relative ms-3 me-6">
+      <!--begin::Svg Icon | path: icons/duotune/abstract/abs051.svg-->
+      <span [inlineSVG]="'./assets/media/icons/duotune/abstract/abs051.svg'"
+        class="svg-icon svg-icon-info position-absolute opacity-10"></span>
+      <!--end::Svg Icon-->
+      <!--begin::Svg Icon | path: icons/duotune/art/art006.svg-->
+      <span [inlineSVG]="'./assets/media/icons/duotune/art/art006.svg'"
+        class="svg-icon svg-icon-3x svg-icon-info position-absolute"></span>
+      <!--end::Svg Icon-->
+    </div>
+    <!--end::Icon-->
+    <!--begin::Description-->
+    <div class="text-gray-700 fw-bold fs-6 lh-lg">
+      We use <code>@ng-bootstrap/modals</code> under the hood of our modal component. More information are avaialbe
+      here: <a
+        href="https://ng-bootstrap.github.io/#/components/modal/examples">https://ng-bootstrap.github.io/#/components/modal/examples</a>
+    </div>
+    <!--end::Description-->
+  </div>
+</div>
+
+<div class="pb-10">
+  <h1 class="anchor fw-bolder mb-5" id="imports">
+    <a href="#imports"></a>Import modals module
+  </h1>
+  <div class="py-5">
+    <p>First you have to import <code>ModalsModule</code> in your module to use the modal component in your pages.</p>
+    <app-code-block language="ts" [code]="code1"></app-code-block>
+    <p>
+      Examples of the import you can check in the file: <code>demo1/src/app/pages/dashboard/dashboard.module.ts</code>
+    </p>
+  </div>
+</div>
+
+<div class="pb-10">
+  <h1 class="anchor fw-bolder mb-5" id="adding-modal-configuration">
+    <a href="#adding-modal-configuration"></a>Add Modal configuration
+  </h1>
+  <div class="py-5">
+    <p>Create the <code>modalConfig</code> variable in your component:</p>
+
+    <app-code-block language="ts" [code]="code2"></app-code-block>
+
+    <p>
+      Examples of the <code>modalConfig</code> variable you can check in the file:
+      <code>demo1/src/app/pages/dashboard/dashboard.component.ts</code>
+    </p>
+  </div>
+</div>
+
+<div class="pb-10">
+  <h1 class="anchor fw-bolder mb-5" id="adding-open-method">
+    <a href="#adding-open-method"></a>Add Open method
+  </h1>
+  <div class="py-5">
+    <p>Create the <code>open</code> method in your component:</p>
+
+    <app-code-block language="ts" [code]="code3"></app-code-block>
+
+    <p>
+      Examples of the <code>modalConfig</code> variable you can check in the file:
+      <code>demo1/src/app/pages/dashboard/dashboard.component.ts</code>
+    </p>
+  </div>
+</div>
+
+<div class="pb-10">
+  <h1 class="anchor fw-bolder mb-5" id="add-component">
+    <a href="#add-component"></a>Add component in your component html markup
+  </h1>
+  <div class="py-5">
+    <p>Create the <code>open</code> method in your component:</p>
+
+    <app-code-block language="html" [code]="code4"></app-code-block>
+
+    <p>
+      Examples of the <code>modalConfig</code> variable you can check in the file:
+      <code>demo1/src/app/pages/dashboard/dashboard.component.html</code> (*commented in the bottom)
+    </p>
+  </div>
+</div>

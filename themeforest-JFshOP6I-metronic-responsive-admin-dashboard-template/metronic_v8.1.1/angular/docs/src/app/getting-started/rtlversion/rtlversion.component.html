@@ -1,0 +1,47 @@
+<div class="pb-10">
+  <h1 class="anchor fw-bolder mb-5" id="deployment">
+    <a href="#rtl"></a>RTL (Right to left view)
+  </h1>
+
+  <div class="py-5">
+    <p class="mb-0">Metronic supports full <b>RTL</b> and easily setup following the below instructions.</p>
+  </div>
+
+  <div class="py-5">
+    <ol class="my-0 py-0">
+      <li class="py-3">
+        Run:
+        <app-code-block language="scss" [code]="code1"></app-code-block>
+        <p>* It should generate <code>/angular/demo#/src/assets/css/style.rtl.css</code> file.</p>
+      </li>
+
+
+      <li class="py-3">
+        Switch styles in <code>/angular/demo#/src/styles.scss</code> file from LTL to RTL:
+        <app-code-block language="scss" [code]="code3"></app-code-block>
+      </li>
+
+      <li class="py-3">
+        Switch view direction in <code>/angular/demo#/src/index.html</code> file from LTL to RTL:
+        <app-code-block language="scss" [code]="code2"></app-code-block>
+      </li>
+    </ol>
+  </div>
+
+  <div class="d-flex align-items-center rounded py-5 px-5 bg-light-danger">
+    <span class="svg-icon svg-icon-3x svg-icon-danger me-5"
+      [inlineSVG]="'./assets/media/icons/duotune/general/gen044.svg'"></span>
+    <div class="text-gray-700 fw-bold fs-6">
+      Metronic provides basic RTL support using the mentioned automation tools and further adjustments of the theme and
+      related 3rd-party plugins for the full RTL support are responsibiliy of buyers.
+    </div>
+  </div>
+
+  <div class="d-flex align-items-center rounded py-5 px-5 bg-light-danger">
+    <span class="svg-icon svg-icon-3x svg-icon-danger me-5"
+      [inlineSVG]="'./assets/media/icons/duotune/general/gen044.svg'"></span>
+    <div class="text-gray-700 fw-bold fs-6">
+      Addition information about RTL: <a [href]="docUrl" target="_blank">{{docUrl}}</a>
+    </div>
+  </div>
+</div>
